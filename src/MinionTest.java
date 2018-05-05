@@ -3,13 +3,13 @@
  *    Level 1
  */
 
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 /**
- * To make these tests pass, you will need to create a Minion class with the member variables below.
+ * To make these tests pass, you will need to create a Minion class with the
+ * member variables below.
  * 
  * <code>
  * 			private String name; 
@@ -18,12 +18,15 @@ import org.junit.Test;
  * 			private String master;
  * </code>
  * 
- * Create a constructor, and getters and setters for the member variables. If they’re done right, these tests will pass.
+ * Create a constructor, and getters and setters for the member variables. If
+ * they’re done right, these tests will pass.
  * 
- * **/
+ **/
 
 public class MinionTest {
-
+public static void main(String[] args) {
+	
+}
 	@Test
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
@@ -48,7 +51,54 @@ public class MinionTest {
 		assertEquals("Napoleon", stuart.getMaster());
 	}
 
+	class Minion {
+		Minion(String name, int eyes, String color,String master){
+			
+			this.name = name;
+			this.eyes = eyes;
+			this.color = color;
+			this.master = master;
+		}
+		
+		 Minion stuart = new Minion("Stuart", 1, "yellow", " ");
+		
+		private String name;
+
+		String getName() {
+			
+			return name;
+		}
+		void setName(String name) {
+			this.name = name;
+		}
+
+		private int eyes;
+
+		int getEyes() {
+			
+			return eyes;
+		}
+void setEyes(int eyes) {
+	this.eyes = eyes;
 }
+		private String color;
 
+		String getColor() {
 
+			return color;
+		}
+void setColor(String color) {
+	this.color = color;
+}
+		private String master;
 
+		String getMaster() {
+
+			return master;
+		}
+void setMaster(String master) {
+	this.master = master;
+}
+	}
+
+}
