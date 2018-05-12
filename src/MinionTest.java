@@ -52,6 +52,12 @@ public static void main(String[] args) {
 	}
 
 	class Minion {
+		
+		private String name;
+		private int eyes;
+		private String color;
+		private String master;
+		
 		Minion(String name, int eyes, String color,String master){
 			
 			this.name = name;
@@ -60,9 +66,9 @@ public static void main(String[] args) {
 			this.master = master;
 		}
 		
-		 Minion stuart = new Minion("Stuart", 1, "yellow", " ");
 		
-		private String name;
+		
+		
 
 		String getName() {
 			
@@ -72,7 +78,7 @@ public static void main(String[] args) {
 			this.name = name;
 		}
 
-		private int eyes;
+		
 
 		int getEyes() {
 			
@@ -81,7 +87,7 @@ public static void main(String[] args) {
 void setEyes(int eyes) {
 	this.eyes = eyes;
 }
-		private String color;
+		
 
 		String getColor() {
 
@@ -90,7 +96,7 @@ void setEyes(int eyes) {
 void setColor(String color) {
 	this.color = color;
 }
-		private String master;
+		
 
 		String getMaster() {
 
