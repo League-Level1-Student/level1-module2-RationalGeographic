@@ -4,10 +4,7 @@ import org.junit.Test;
 
 public class partea {
 	
-	public String welcome(String name, boolean isWoman, boolean isKnighted)
-    {
-
-    }
+	
        /**
         * Jane Austen is a woman, so say “Hello Ms. Austen”. 
         * George Orwell is a man, so say “Hello Mr. Orwell”. 
@@ -17,9 +14,30 @@ public class partea {
        @Test
        public void test() {
                partea teaParty = new partea();
-               String greeting = teaParty.welcome(null, false, false);
+              
                assertEquals("Hello Ms. Austen", teaParty.welcome("Austen", true, false));
                assertEquals("Hello Mr. Orwell", teaParty.welcome("Orwell", false, false));
                assertEquals("Hello Sir Isaac Newton", teaParty.welcome("Isaac Newton", false, true));
        }
+       
+       
+       public String welcome(String name, boolean female, boolean knighted)
+    {
+		String result = "Hello";
+		if(female==true&&knighted==false) {
+			result+= " Ms. "+ name;
+		}
+		else if(female==false&&knighted==false)
+		{
+			result+= " Mr. "+name;
+		}
+		else if(female==false&&knighted==true) {
+			result+=" Sir "+name; 
+		}
+		System.out.println(result);
+		return result;
+
+		
+		
+    }
 }
