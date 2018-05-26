@@ -9,8 +9,19 @@ this.maker = maker;
 3. Finish the Pig constructor.
 class Pig {         private String name;        private boolean isSheepHerder;         public Pig(String name, boolean canHerdSheep) {            this.name = name;
 this.isSheepHerder = isSheepHerder;            }       public boolean willBecomeBacon() {             if(this.isSheepHerder)                   return false;             else return true;       } 
-4. Instantiate two pigs, “Babe” and “Rasher”.    Pig b = new Pig(“Babe”, false); Pig r = new Pig(“rasher”’ false);  
-5. Write code to create strawberry jam and spread it on toast.    class Jam{ String Strawberry  }  
-6. Imagine there is a pig instance called ziggy. Write code that will print “bacon for breakfast” if ziggy is destined to be turned into bacon, or “eggs for breakfast” if he is not.       
+4. Instantiate two pigs, “Babe” and “Rasher”.    Pig b = new Pig(“Babe”, false); Pig r = new Pig(“rasher”’ false);   
+6. Imagine there is a pig instance called ziggy. Write code that will print “bacon for breakfast” if ziggy is destined to be turned into bacon, or “eggs for breakfast” if he is not.  String ziggy = “bacon”;
+if(ziggy==“bacon”) {
+syso(“bacon for breakfast”);
+}
+
+if(ziggy!=“bacon”)
+{
+syso(“eggs for breakfast”);
+}
+
+
+
+
 
 

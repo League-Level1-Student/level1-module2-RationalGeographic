@@ -1,0 +1,80 @@
+1. Call this method so that it prints “I like apples”. 
+food(“apple”);
+
+void food(String fruit) {
+
+       System.out.println("I like " + fruit); 
+
+}
+
+
+2. Call this method to that it prints “Nerds rule”.
+
+truth(8);
+void truth(int x) {
+
+       if(x > 5) 
+
+              System.out.println("Geeks rule");
+
+       else
+
+              System.out.println("Nerds rule");
+
+}
+
+
+3. Use this method to draw a square. Don’t change the inside of the method.
+
+for(i=0; i<4; i++){
+drawline();
+}
+void drawLine() {
+
+       Tortoise.move(100);
+
+       Tortoise.turn(90); 
+}
+
+
+4. Fix any problems with the following constructors.
+
+hell hellw = new hell(9);
+class Hell {
+
+      void Hell(int hotness) {
+syso(hotness);
+
+
+      }
+
+}
+
+public class Bacon {
+
+      String style = "streaky";
+
+      Bacon (String style) {
+            this.style = style;
+      }
+
+}
+unicorn unilol = new unicorn(horn);
+public class Unicorn {
+
+      private Unicorn(int horns) {
+            this.horns = 1;
+      }
+
+}
+narwhale narrow = new narwhale)awesome);
+class Narwhal {
+string awesome = “radiccallyuuuuuu”;
+      public Narwhale(string awesomę)
+{
+this.awesome = awesome;
+}
+
+}
+
+
